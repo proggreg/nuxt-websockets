@@ -16,14 +16,17 @@ function sendData(){
 </script>
 
 <template>
-  <div>
-    <h1>WebSocket - let's go!</h1>
-    <form @submit.prevent="sendData">
-      <input v-model="message">
-      <button type="submit">Send</button>
-    </form>
-    <div>
+  <h1>WebSocket - let's go!</h1>
+  <form @submit.prevent="sendData">
+    <Input v-model="message"/>
+    <Button type="submit">Send</Button>
+  </form>
+  <Card>
+    <CardHeader>
+      <CardTitle>Messages</CardTitle>
+    </CardHeader>
+    <CardContent>
       <p v-for="entry in history">{{ entry }}</p>
-    </div>
-  </div>
+    </CardContent>
+  </Card>
 </template>
