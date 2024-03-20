@@ -15,16 +15,9 @@ export default defineWebSocketHandler({
   },
   message(peer, message) {
     console.log('message on WS', peer, message)
-    onCalc(peer, message)
+
     peer.publish(room, message.text())
   }
 })
-function onCalc(peer: Peer, message: Message) {
-  if(message.text().startsWith('calc ')){
-    const equation = message.text().replace('calc ', '')
-    // TODO: UNSAFE - DO NOT DO IN PROD, CAN LEAD TO XSS/RCI
-    const result = eval(equation)
-    peer.send(`The result of "${equation}" is: ${result}`)
-  }
-}
+
 
