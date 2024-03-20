@@ -1,9 +1,19 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
+  '@vueuse/core':
+    specifier: ^10.9.0
+    version: 10.9.0(vue@3.4.21)
+  '@vueuse/nuxt':
+    specifier: ^10.9.0
+    version: 10.9.0(nuxt-nightly@3.11.2-28515493.6f2e7a8b)(vue@3.4.21)
   nuxt:
-    specifier: ^3.11.1
-    version: 3.11.1(@unocss/reset@0.58.6)(floating-vue@5.2.2)(unocss@0.58.6)(vite@5.2.2)
+    specifier: npm:nuxt-nightly@latest
+    version: /nuxt-nightly@3.11.2-28515493.6f2e7a8b(@unocss/reset@0.58.6)(floating-vue@5.2.2)(nuxt-nightly@3.11.2-28515493.6f2e7a8b)(unocss@0.58.6)(vite@5.2.2)
   vue:
     specifier: ^3.4.21
     version: 3.4.21
@@ -865,7 +875,7 @@ packages:
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
     dev: false
 
-  /@nuxt/devtools-kit@1.1.0(nuxt@3.11.1)(vite@5.2.2):
+  /@nuxt/devtools-kit@1.1.0(nuxt-nightly@3.11.2-28515493.6f2e7a8b)(vite@5.2.2):
     resolution: {integrity: sha512-Mf198/nwoM6VaAuAA9TPB6gt0Ic9DiDjBGCuVDiUBVFEr253y30474bKU8+P3JQa0LYYkzzBLJVKDSd8wb4fZg==}
     peerDependencies:
       nuxt: ^3.9.0
@@ -874,7 +884,7 @@ packages:
       '@nuxt/kit': 3.11.1
       '@nuxt/schema': 3.11.1
       execa: 7.2.0
-      nuxt: 3.11.1(@unocss/reset@0.58.6)(floating-vue@5.2.2)(unocss@0.58.6)(vite@5.2.2)
+      nuxt: /nuxt-nightly@3.11.2-28515493.6f2e7a8b(@unocss/reset@0.58.6)(floating-vue@5.2.2)(nuxt-nightly@3.11.2-28515493.6f2e7a8b)(unocss@0.58.6)(vite@5.2.2)
       vite: 5.2.2
     transitivePeerDependencies:
       - rollup
@@ -897,7 +907,7 @@ packages:
       semver: 7.6.0
     dev: false
 
-  /@nuxt/devtools@1.1.0(@unocss/reset@0.58.6)(floating-vue@5.2.2)(nuxt@3.11.1)(unocss@0.58.6)(vite@5.2.2)(vue@3.4.21):
+  /@nuxt/devtools@1.1.0(@unocss/reset@0.58.6)(floating-vue@5.2.2)(nuxt-nightly@3.11.2-28515493.6f2e7a8b)(unocss@0.58.6)(vite@5.2.2)(vue@3.4.21):
     resolution: {integrity: sha512-55oopcCMA8TLcVXUEEPX5gWwtQeOV3ux0XdYL0ougXtsgeBf4Jr5cO/VxI5pC7kPYojJmxy/cxbVVgTDVd4TfA==}
     hasBin: true
     peerDependencies:
@@ -905,7 +915,7 @@ packages:
       vite: '*'
     dependencies:
       '@antfu/utils': 0.7.7
-      '@nuxt/devtools-kit': 1.1.0(nuxt@3.11.1)(vite@5.2.2)
+      '@nuxt/devtools-kit': 1.1.0(nuxt-nightly@3.11.2-28515493.6f2e7a8b)(vite@5.2.2)
       '@nuxt/devtools-wizard': 1.1.0
       '@nuxt/kit': 3.11.1
       '@vue/devtools-applet': 7.0.20(@unocss/reset@0.58.6)(floating-vue@5.2.2)(unocss@0.58.6)(vite@5.2.2)(vue@3.4.21)
@@ -926,7 +936,7 @@ packages:
       launch-editor: 2.6.1
       local-pkg: 0.5.0
       magicast: 0.3.3
-      nuxt: 3.11.1(@unocss/reset@0.58.6)(floating-vue@5.2.2)(unocss@0.58.6)(vite@5.2.2)
+      nuxt: /nuxt-nightly@3.11.2-28515493.6f2e7a8b(@unocss/reset@0.58.6)(floating-vue@5.2.2)(nuxt-nightly@3.11.2-28515493.6f2e7a8b)(unocss@0.58.6)(vite@5.2.2)
       nypm: 0.3.8
       ohash: 1.1.3
       pacote: 17.0.6
@@ -968,6 +978,33 @@ packages:
       - vue
     dev: false
 
+  /@nuxt/kit-nightly@3.11.2-28515493.6f2e7a8b:
+    resolution: {integrity: sha512-y9UxaL9VGQ099GJgYuyNzuMHkFOtZwK/P1sZqIIe2fRgiKPgDlk8qoBAX8CgrWERzgLPl+yoEK7yfgjPwx0maA==}
+    engines: {node: ^14.18.0 || >=16.10.0}
+    dependencies:
+      '@nuxt/schema': /@nuxt/schema-nightly@3.11.2-28515493.6f2e7a8b
+      c12: 1.10.0
+      consola: 3.2.3
+      defu: 6.1.4
+      globby: 14.0.1
+      hash-sum: 2.0.0
+      ignore: 5.3.1
+      jiti: 1.21.0
+      knitwork: 1.0.0
+      mlly: 1.6.1
+      pathe: 1.1.2
+      pkg-types: 1.0.3
+      scule: 1.3.0
+      semver: 7.6.0
+      ufo: 1.5.3
+      unctx: 2.3.1
+      unimport: 3.7.1(rollup@4.13.0)
+      untyped: 1.4.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: false
+
   /@nuxt/kit@3.11.1:
     resolution: {integrity: sha512-8VVlhaY4N+wipgHmSXP+gLM+esms9TEBz13I/J++PbOUJuf2cJlUUTyqMoRVL0xudVKK/8fJgSndRkyidy1m2w==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -988,6 +1025,26 @@ packages:
       semver: 7.6.0
       ufo: 1.5.3
       unctx: 2.3.1
+      unimport: 3.7.1(rollup@4.13.0)
+      untyped: 1.4.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: false
+
+  /@nuxt/schema-nightly@3.11.2-28515493.6f2e7a8b:
+    resolution: {integrity: sha512-dd44K5gDivrSkEf3TON7z40lp1WcktdGs4rtCrdXT1DmL9ytR4U0hNXGdPpunz3noMcqdxMDF+moNJ+ZqMdKCA==}
+    engines: {node: ^14.18.0 || >=16.10.0}
+    dependencies:
+      '@nuxt/ui-templates': 1.3.1
+      consola: 3.2.3
+      defu: 6.1.4
+      hookable: 5.5.3
+      pathe: 1.1.2
+      pkg-types: 1.0.3
+      scule: 1.3.0
+      std-env: 3.7.0
+      ufo: 1.5.3
       unimport: 3.7.1(rollup@4.13.0)
       untyped: 1.4.2
     transitivePeerDependencies:
@@ -1045,13 +1102,13 @@ packages:
     resolution: {integrity: sha512-5gc02Pu1HycOVUWJ8aYsWeeXcSTPe8iX8+KIrhyEtEoOSkY0eMBuo0ssljB8wALuEmepv31DlYe5gpiRwkjESA==}
     dev: false
 
-  /@nuxt/vite-builder@3.11.1(vue@3.4.21):
-    resolution: {integrity: sha512-8DVK2Jb9xgfnvTfKr5mL3UDdAIrd3q3F4EmoVsXVKJe8NTt9LW38QdGwGViIQm9wzLDDEo0mgWF+n7WoGEH0xQ==}
+  /@nuxt/vite-builder-nightly@3.11.2-28515493.6f2e7a8b(vue@3.4.21):
+    resolution: {integrity: sha512-J4ycJgZIpYHQx8ynUugkZiuHg+1Y2RJbfI2zXK7LD4G4Hk+w2FDbzad4DQxbAf3Tta7ZLiJ50XopkiO01hEqFQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
     peerDependencies:
       vue: ^3.3.4
     dependencies:
-      '@nuxt/kit': 3.11.1
+      '@nuxt/kit': /@nuxt/kit-nightly@3.11.2-28515493.6f2e7a8b
       '@rollup/plugin-replace': 5.0.5(rollup@4.13.0)
       '@vitejs/plugin-vue': 5.0.4(vite@5.2.2)(vue@3.4.21)
       '@vitejs/plugin-vue-jsx': 3.1.0(vite@5.2.2)(vue@3.4.21)
@@ -1066,7 +1123,7 @@ packages:
       externality: 1.0.2
       fs-extra: 11.2.0
       get-port-please: 3.1.2
-      h3: 1.11.1
+      h3: /h3-nightly@1.11.2-1710122014.107ec8e
       knitwork: 1.0.0
       magic-string: 0.30.8
       mlly: 1.6.1
@@ -2199,6 +2256,24 @@ packages:
 
   /@vueuse/metadata@10.9.0:
     resolution: {integrity: sha512-iddNbg3yZM0X7qFY2sAotomgdHK7YJ6sKUvQqbvwnf7TmaVPxS4EJydcNsVejNdS8iWCtDk+fYXr7E32nyTnGA==}
+    dev: false
+
+  /@vueuse/nuxt@10.9.0(nuxt-nightly@3.11.2-28515493.6f2e7a8b)(vue@3.4.21):
+    resolution: {integrity: sha512-nC4Efg28Q6E41fUD5R+zM9uT5c+NfaDzaJCpqaEV/qHj+/BNJmkDBK8POLIUsiVOY35d0oD/YxZ+eVizqWBZow==}
+    peerDependencies:
+      nuxt: ^3.0.0
+    dependencies:
+      '@nuxt/kit': 3.11.1
+      '@vueuse/core': 10.9.0(vue@3.4.21)
+      '@vueuse/metadata': 10.9.0
+      local-pkg: 0.5.0
+      nuxt: /nuxt-nightly@3.11.2-28515493.6f2e7a8b(@unocss/reset@0.58.6)(floating-vue@5.2.2)(nuxt-nightly@3.11.2-28515493.6f2e7a8b)(unocss@0.58.6)(vite@5.2.2)
+      vue-demi: 0.14.7(vue@3.4.21)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - vue
     dev: false
 
   /@vueuse/shared@10.9.0(vue@3.4.21):
@@ -3539,6 +3614,23 @@ packages:
       duplexer: 0.1.2
     dev: false
 
+  /h3-nightly@1.11.2-1710122014.107ec8e:
+    resolution: {integrity: sha512-ND29WjdwBc6zw8yO1jz9IoBzAyBqNCvnLtFqcCYL7ETnEWk6bsbUvVjkyjKr1k1TvJIN+0e6G017ofLNfP71eQ==}
+    dependencies:
+      cookie-es: 1.0.0
+      crossws: 0.2.4
+      defu: 6.1.4
+      destr: 2.0.3
+      iron-webcrypto: 1.1.0
+      ohash: 1.1.3
+      radix3: 1.1.1
+      ufo: 1.5.3
+      uncrypto: 0.1.3
+      unenv: 1.9.0
+    transitivePeerDependencies:
+      - uWebSockets.js
+    dev: false
+
   /h3@1.11.1:
     resolution: {integrity: sha512-AbaH6IDnZN6nmbnJOH72y3c5Wwh9P97soSVdGSBbcDACRdkC0FEWf25pzx4f/NuOCK6quHmW18yF2Wx+G4Zi1A==}
     dependencies:
@@ -4339,8 +4431,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /nitropack@2.9.4:
-    resolution: {integrity: sha512-i/cbDW5qfZS6pQR4DrlQOFlNoNvQVBuiy7EEvMlrqkmMGXiIJY1WW7L7D4/6m9dF1cwitOu7k0lJWVn74gxfvw==}
+  /nitropack-nightly@2.10.0-28509108.fdf7e70:
+    resolution: {integrity: sha512-sAJ7BfdQe80IW8WnzVdnIJPe577Vri9Gz8p7kkDB8yJuk6tjcXKs6HyPqKEIAL5bhJR1SqnZsKlt/lVpMpjybA==}
     engines: {node: ^16.11.0 || >=17.0.0}
     hasBin: true
     peerDependencies:
@@ -4380,7 +4472,7 @@ packages:
       fs-extra: 11.2.0
       globby: 14.0.1
       gzip-size: 7.0.0
-      h3: 1.11.1
+      h3: /h3-nightly@1.11.2-1710122014.107ec8e
       hookable: 5.5.3
       httpxy: 0.1.5
       ioredis: 5.3.2
@@ -4617,16 +4709,16 @@ packages:
       boolbase: 1.0.0
     dev: false
 
-  /nuxi@3.11.1:
-    resolution: {integrity: sha512-AW71TpxRHNg8MplQVju9tEFvXPvX42e0wPYknutSStDuAjV99vWTWYed4jxr/grk2FtKAuv2KvdJxcn2W59qyg==}
+  /nuxi-nightly@3.11.2-1710930144.8e1bd03:
+    resolution: {integrity: sha512-IZrEuOD4FnVyesbDT4tIS9XCTtZvyxhrX7sEDTmUWG9IDLKWvx461g9L6+O56yUKWx50cSoyJcSChQiTli2uSA==}
     engines: {node: ^16.10.0 || >=18.0.0}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.3
     dev: false
 
-  /nuxt@3.11.1(@unocss/reset@0.58.6)(floating-vue@5.2.2)(unocss@0.58.6)(vite@5.2.2):
-    resolution: {integrity: sha512-CsncE1dxP0cmOYT+PBdjMD0bOK8eZizG5tgNWUOJAAAtU45sO38maoBumYYL2kUpT/SC/dMP+831DAcVPvi9pQ==}
+  /nuxt-nightly@3.11.2-28515493.6f2e7a8b(@unocss/reset@0.58.6)(floating-vue@5.2.2)(nuxt-nightly@3.11.2-28515493.6f2e7a8b)(unocss@0.58.6)(vite@5.2.2):
+    resolution: {integrity: sha512-oTCYgftQ7XlZwZLUBy7Q/K6kQJSt3b8IhKA2r1kVOnbznSTpJsiX8KFBQmsjkyu27Uz0aD/tc3Led9MbYgXD3A==}
     engines: {node: ^14.18.0 || >=16.10.0}
     hasBin: true
     peerDependencies:
@@ -4639,12 +4731,12 @@ packages:
         optional: true
     dependencies:
       '@nuxt/devalue': 2.0.2
-      '@nuxt/devtools': 1.1.0(@unocss/reset@0.58.6)(floating-vue@5.2.2)(nuxt@3.11.1)(unocss@0.58.6)(vite@5.2.2)(vue@3.4.21)
-      '@nuxt/kit': 3.11.1
-      '@nuxt/schema': 3.11.1
+      '@nuxt/devtools': 1.1.0(@unocss/reset@0.58.6)(floating-vue@5.2.2)(nuxt-nightly@3.11.2-28515493.6f2e7a8b)(unocss@0.58.6)(vite@5.2.2)(vue@3.4.21)
+      '@nuxt/kit': /@nuxt/kit-nightly@3.11.2-28515493.6f2e7a8b
+      '@nuxt/schema': /@nuxt/schema-nightly@3.11.2-28515493.6f2e7a8b
       '@nuxt/telemetry': 2.5.3
       '@nuxt/ui-templates': 1.3.1
-      '@nuxt/vite-builder': 3.11.1(vue@3.4.21)
+      '@nuxt/vite-builder': /@nuxt/vite-builder-nightly@3.11.2-28515493.6f2e7a8b(vue@3.4.21)
       '@unhead/dom': 1.8.20
       '@unhead/ssr': 1.8.20
       '@unhead/vue': 1.8.20(vue@3.4.21)
@@ -4661,15 +4753,15 @@ packages:
       estree-walker: 3.0.3
       fs-extra: 11.2.0
       globby: 14.0.1
-      h3: 1.11.1
+      h3: /h3-nightly@1.11.2-1710122014.107ec8e
       hookable: 5.5.3
       jiti: 1.21.0
       klona: 2.0.6
       knitwork: 1.0.0
       magic-string: 0.30.8
       mlly: 1.6.1
-      nitropack: 2.9.4
-      nuxi: 3.11.1
+      nitropack: /nitropack-nightly@2.10.0-28509108.fdf7e70
+      nuxi: /nuxi-nightly@3.11.2-1710930144.8e1bd03
       nypm: 0.3.8
       ofetch: 1.3.3
       ohash: 1.1.3
@@ -4728,6 +4820,7 @@ packages:
       - lightningcss
       - meow
       - nprogress
+      - nuxt
       - optionator
       - qrcode
       - rollup
